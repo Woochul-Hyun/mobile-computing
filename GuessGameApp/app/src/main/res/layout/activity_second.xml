@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.user.guessgameapp.secondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.56"
+            android:gravity="center_vertical|center"
+            android:text="@string/choose_lower"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="222dp"
+            android:layout_height="119dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03">
+
+        <TextView
+            android:id="@+id/lowerLimit"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:hint="@string/_0"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.56"
+            android:gravity="center_vertical|center"
+            android:text="@string/choose_upper"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="222dp"
+            android:layout_height="119dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03">
+
+        <TextView
+            android:id="@+id/upperLimit"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:hint="@string/_0"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textSize="18sp"
+        android:onClick="nextClick"/>
+
+</LinearLayout>
